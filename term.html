@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from html.themewin.com/edurcok-preview-tailwind/edurock/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Jul 2024 05:30:53 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENG Nine</title>
+    <link rel="shortcut icon"
+          type="image/x-icon"
+          href="assets/images/favicon.ico">
+    <!-- link stylesheet -->
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <link rel="stylesheet" href="assets/css/video-modal.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="relative font-inter font-normal text-base leading-[1.8] bg-bodyBg dark:bg-bodyBg-dark">
+    <!-- preloader -->
+    <div class="preloader flex fixed top-0 left-0 h-screen w-full items-center justify-center z-xxl bg-whiteColor opacity-100 visible transition-all duration-700">
+        <!-- spinner -->
+        <div class="w-90px h-90px border-5px border-t-blue border-r-blue border-b-blue-light border-l-blue-light rounded-full animate-spin-infinit"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+            <img src="assets/images/pre.png" alt="Preloader" class="h-10 w-10 block">
+        </div>
+    </div>
+    <!-- theme fixed shadow -->
+    <div>
+        <div class="fixed-shadow left-[-250px]"></div>
+        <div class="fixed-shadow right-[-250px]"></div>
+    </div>
+
+    <!-- theme controller -->
+    <div class="fixed top-[100px] 2xl:top-[300px] transition-all duration-300 right-[-50px] hover:right-0 z-xl">
+        <button class="theme-controller w-90px h-10 bg-primaryColor dark:bg-whiteColor-dark rounded-l-lg2 text-whiteColor px-10px flex items-center dark:shadow-theme-controller">
+            <!-- dark -->
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 class="mr-10px w-5 block dark:hidden"
+                 viewBox="0 0 512 512">
+                <path d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"></path>
+            </svg>
+
+            <!-- light -->
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 class="hidden mr-10px w-5 dark:block"
+                 viewBox="0 0 512 512">
+                <path fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      stroke-width="32"
+                      d="M256 48v48M256 416v48M403.08 108.92l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48M96 256H48M403.08 403.08l-33.94-33.94M142.86 142.86l-33.94-33.94"></path>
+                <circle cx="256"
+                        cy="256"
+                        r="80"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-miterlimit="10"
+                        stroke-width="32"></circle>
+            </svg>
+
+        </button>
+    </div>
+    <!-- scroll up button -->
+    <div>
+        <button class="scroll-up w-50px h-50px leading-50px text-center text-primaryColor bg-white hover:text-whiteColor hover:bg-primaryColor rounded-full fixed right-5 bottom-[60px] shadow-scroll-up z-medium text-xl dark:text-whiteColor dark:bg-primaryColor dark:hover:text-whiteColor-dark hidden">
+            <i class="icofont-rounded-up"></i>
+        </button>
+    </div>
+    <!--======= Header area start =======-->
+    <header>
+        <!-- header top start -->
+        <div class="bg-blackColor2 dark:bg-lightGrey10-dark hidden lg:block">
+            <div class="container 3xl:container2-lg 4xl:container mx-auto text-whiteColor text-size-12 xl:text-sm py-5px xl:py-9px">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p>Call Us:+91-9569602525 - Mail Us: lsrw26@gmail.com</p>
+                    </div>
+                    <div class="flex gap-37px items-center">
+                        <div>
+                            <p>
+                                <i class="icofont-location-pin text-primaryColor text-size-15 mr-5px"></i>
+                                <span>Circular Bank Road Near Shiv Mandir City Gidderbaha Pincode 152101 State Punjab</span>
+                            </p>
+                        </div>
+                        <div>
+                            <!-- header social list -->
+                            <ul class="flex gap-13px text-size-15">
+                                <li>
+                                    <a class="hover:text-primaryColor" href="#">
+                                        <i class="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="hover:text-primaryColor" href="#">
+                                        <i class="icofont-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="hover:text-primaryColor" href="#">
+                                        <i class="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="hover:text-primaryColor" href="#">
+                                        <i class="icofont-youtube-play"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header top end -->
+        <!-- navbar start -->
+        <div class="transition-all duration-500 sticky-header z-medium dark:bg-whiteColor-dark">
+            <nav>
+                <div class="py-15px lg:py-0 px-15px lg:container 3xl:container2-lg 4xl:container mx-auto relative">
+                    <div class="grid grid-cols-2 lg:grid-cols-12 items-center gap-15px">
+                        <!-- navbar left -->
+                        <div class="lg:col-start-1 lg:col-span-2">
+                            <a href="index.html" class="block">
+                                <img src="assets/images/logo/logo_1.png"
+                                     alt="Logo"
+                                     class="w-logo-sm lg:w-auto py-2">
+                            </a>
+                        </div>
+                        <!-- Main menu -->
+                        <div class="hidden lg:block lg:col-start-3 lg:col-span-7">
+                            <ul class="nav-list flex justify-center">
+                                <li class="nav-item group">
+                                    <a href="index.html"
+                                       class="px-5 lg:px-10px 2xl:px-15px 3xl:px-5 py-10 lg:py-5 2xl:py-30px 3xl:py-10 leading-sm 2xl:leading-lg text-base lg:text-sm 2xl:text-base font-semibold block group-hover:text-primaryColor dark:text-whiteColor">
+                                        Home
+
+                                    </a>
+                                    <!-- dropdown menu -->
+
+                                </li>
+
+                                <li class="nav-item group">
+                                    <a href="about.html"
+                                       class="px-5 lg:px-10px 2xl:px-15px 3xl:px-5 py-10 lg:py-5 2xl:py-30px 3xl:py-10 leading-sm 2xl:leading-lg text-base lg:text-sm 2xl:text-base font-semibold block group-hover:text-primaryColor dark:text-whiteColor">
+                                        About Us
+
+                                    </a>
+                                    <!-- dropdown menu -->
+                                    <div class="dropdown absolute left-0 translate-y-10 z-medium hidden opacity-0"
+                                         style="transition: 0.3s">
+                                    </div>
+                                </li>
+                                <li class="nav-item group relative">
+                                    <a href="services.html"
+                                       class="px-5 lg:px-10px 2xl:px-15px 3xl:px-5 py-10 lg:py-5 2xl:py-30px 3xl:py-10 leading-sm 2xl:leading-lg text-base lg:text-sm 2xl:text-base font-semibold block group-hover:text-primaryColor dark:text-whiteColor">
+                                        Services
+
+                                    </a>
+                                    <!-- dropdown menu -->
+                                    <div class="dropdown absolute left-0 translate-y-10 z-medium hidden opacity-0"
+                                         style="transition: 0.3s">
+                                    </div>
+                                </li>
+                                <li class="nav-item group relative">
+                                    <a href="#"
+                                       class="px-5 lg:px-10px 2xl:px-15px 3xl:px-5 py-10 lg:py-5 2xl:py-30px 3xl:py-10 leading-sm 2xl:leading-lg text-base lg:text-sm 2xl:text-base font-semibold block group-hover:text-primaryColor dark:text-whiteColor">
+                                        Business Plan
+
+                                    </a>
+                                    <!-- dropdown menu -->
+
+                                </li>
+
+                                <li class="nav-item group relative">
+                                    <a href="contact.html"
+                                       class="px-5 lg:px-10px 2xl:px-15px 3xl:px-5 py-10 lg:py-5 2xl:py-30px 3xl:py-10 leading-sm 2xl:leading-lg text-base lg:text-sm 2xl:text-base font-semibold block group-hover:text-primaryColor dark:text-whiteColor">
+                                        Contact
+
+                                    </a>
+                                    <!-- dropdown menu -->
+
+                                </li>
+                                <!--<li class="nav-item group relative">
+                                    <a href=""
+                                       class="px-5 lg:px-10px 2xl:px-15px 3xl:px-5 py-10 lg:py-5 2xl:py-30px 3xl:py-10 leading-sm 2xl:leading-lg text-base lg:text-sm 2xl:text-base font-semibold block group-hover:text-primaryColor dark:text-whiteColor">
+                                        Login
+
+                                    </a>-->
+                                <!-- dropdown menu -->
+                                <!--</li>-->
+                            </ul>
+                        </div>
+                        <!-- navbar right -->
+                        <div class="lg:col-start-10 lg:col-span-3">
+                            <ul class="relative nav-list flex justify-end items-center">
+
+                                <li class="hidden lg:block">
+                                    <a href="login.html"
+                                       class="text-size-12 2xl:text-size-15 px-15px py-2 text-blackColor hover:text-whiteColor bg-whiteColor block hover:bg-primaryColor border border-borderColor1 rounded-standard font-semibold mr-[7px] 2xl:mr-15px dark:text-blackColor-dark dark:bg-whiteColor-dark dark:hover:bg-primaryColor dark:hover:text-whiteColor dark:hover:border-primaryColor">
+                                        <i class="icofont-user-alt-5"></i>
+                                    </a>
+                                </li>
+                                <li class="hidden lg:block">
+                                    <a href="apk/enginine.apk"
+                                       class="text-size-12 2xl:text-size-15 text-whiteColor bg-primaryColor block border-primaryColor border hover:text-primaryColor hover:bg-white px-15px py-2 rounded-standard dark:hover:bg-whiteColor-dark dark: dark:hover:text-whiteColor">Download APK</a>
+                                </li>
+                                <li class="block lg:hidden">
+                                    <button class="open-mobile-menu text-3xl text-darkdeep1 hover:text-secondaryColor dark:text-whiteColor dark:hover:text-secondaryColor">
+                                        <i class="icofont-navigation-menu"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- navbar end -->
+        <!-- mobile menu -->
+        <div class="mobile-menu w-mobile-menu-sm md:w-mobile-menu-lg fixed top-0 -right-[280px] md:-right-[330px] transition-all duration-500 w-mobile-menu h-full shadow-dropdown-secodary bg-whiteColor dark:bg-whiteColor-dark z-high block lg:hidden">
+            <button class="close-mobile-menu text-lg bg-darkdeep1 hover:bg-secondaryColor text-white px-[11px] py-[6px] absolute top-0 right-full hidden">
+                <i class="icofont icofont-close-line"></i>
+            </button>
+            <!-- mobile menu wrapper -->
+            <div class="px-5 md:px-30px pt-5 md:pt-10 pb-50px h-full overflow-y-auto">
+                <!-- search input  -->
+                <!-- mobile menu accordions -->
+                <div class="pt-8 pb-6 border-b border-borderColor dark:border-borderColor-dark">
+                    <ul class="accordion-container">
+                        <li class="accordion">
+                            <!-- accordion header -->
+                            <div class="flex items-center justify-between">
+                                <a class="leading-1 py-11px text-darkdeep1 font-medium hover:text-secondaryColor dark:text-whiteColor dark:hover:text-secondaryColor"
+                                   href="index.html">Home</a>
+
+                            </div>
+                            <!-- accordion content -->
+
+                        </li>
+                        <li class="accordion">
+                            <!-- accordion header -->
+                            <div class="flex items-center justify-between">
+                                <a class="leading-1 py-11px text-darkdeep1 font-medium hover:text-secondaryColor dark:text-whiteColor dark:hover:text-secondaryColor"
+                                   href="about.html">About Us</a>
+
+                            </div>
+                            <!-- accordion content -->
+
+                        </li>
+                        <li class="accordion">
+                            <!-- accordion header -->
+                            <div class="flex items-center justify-between">
+                                <a class="leading-1 py-11px text-darkdeep1 font-medium hover:text-secondaryColor dark:text-whiteColor dark:hover:text-secondaryColor"
+                                   href="services.html">Services</a>
+
+                            </div>
+                            <!-- accordion content -->
+
+                        </li>
+                        <li class="accordion">
+                            <!-- accordion header -->
+                            <div class="flex items-center justify-between">
+                                <a class="leading-1 py-11px text-darkdeep1 font-medium hover:text-secondaryColor dark:text-whiteColor dark:hover:text-secondaryColor"
+                                   href="contact.html">Contact</a>
+
+                            </div>
+                            <!-- accordion content -->
+
+                        </li>
+                        <li class="accordion">
+                            <!-- accordion header -->
+                            <div class="flex items-center justify-between">
+                                <a class="leading-1 py-11px text-darkdeep1 font-medium hover:text-secondaryColor dark:text-whiteColor dark:hover:text-secondaryColor"
+                                   href="login.html">Login</a>
+
+                            </div>
+                            <!-- accordion content -->
+
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- my account accordion -->
+                <!-- Mobile menu social area -->
+                <div>
+                    <ul class="flex gap-6 items-center mb-5">
+                        <li>
+                            <a class="facebook" href="#">
+                                <i class="icofont icofont-facebook text-fb-color dark:text-whiteColor dark:hover:text-secondaryColor"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="twitter" href="#">
+                                <i class="icofont icofont-twitter text-twiter-color dark:text-whiteColor dark:hover:text-secondaryColor"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="pinterest" href="#">
+                                <i class="icofont icofont-pinterest dark:text-whiteColor dark:hover:text-secondaryColor"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="instagram" href="#">
+                                <i class="icofont icofont-instagram dark:text-whiteColor dark:hover:text-secondaryColor"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="google" href="#">
+                                <i class="icofont icofont-youtube-play dark:text-whiteColor dark:hover:text-secondaryColor"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main body -->
+    <main class="bg-transparent">
+        <!-- banner section -->
+        <section>
+            <!-- banner section -->
+            <div class="bg-lightGrey10 dark:bg-lightGrey10-dark relative z-0 overflow-y-visible py-50px md:py-20 lg:py-100px 2xl:pb-150px 2xl:pt-40.5">
+                <!-- animated icons -->
+                <div>
+                    <img class="absolute left-0 bottom-0 md:left-[14px] lg:left-[50px] lg:bottom-[21px] 2xl:left-[165px] 2xl:bottom-[60px] animate-move-var z-10"
+                         src="assets/images/herobanner/herobanner__1.png"
+                         alt=""><img class="absolute left-0 top-0 lg:left-[50px] lg:top-[100px] animate-spin-slow"
+                                     src="assets/images/herobanner/herobanner__2.png"
+                                     alt=""><img class="absolute right-[30px] top-0 md:right-10 lg:right-[575px] 2xl:top-20 animate-move-var2 opacity-50 hidden md:block"
+                                                 src="assets/images/herobanner/herobanner__3.png"
+                                                 alt="">
+
+                    <img class="absolute right-[30px] top-[212px] md:right-10 md:top-[157px] lg:right-[45px] lg:top-[100px] animate-move-hor"
+                         src="assets/images/herobanner/herobanner__5.png"
+                         alt="">
+                </div>
+                <div class="container">
+                    <div class="text-center">
+                        <h1 class="text-3xl md:text-size-40 2xl:text-size-55 font-bold text-blackColor dark:text-blackColor-dark mb-7 md:mb-6 pt-3">
+                            Term & Conditions
+                        </h1>
+                        <ul class="flex gap-1 justify-center">
+                            <li>
+                                <a href="index.html"
+                                   class="text-lg text-blackColor2 dark:text-blackColor2-dark">
+                                    Home <i class="icofont-simple-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="text-lg text-blackColor2 dark:text-blackColor2-dark">Term & Conditions</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about  section -->
+        <section style="position: relative; top: 35px; margin-bottom: 35px;">
+            <div class="container">
+                <!-- about section  -->
+                <!-- about left -->
+
+                <p><b>Terms and Condition FOR Applications:-</b> READ ALL TERM AND CONDITIONS AND COMPANY POLICIES CAREFULLY BEFORE JOINING</p>
+                <p>This is your duty to read all terms and conditions carefully to work and earn genuinely. Please read all terms and conditions carefully before joining.</p>
+                <h4>Here are terms and conditions</h4>
+                <p>The applicant is required to read thoroughly terms and conditions, policies and procedures, code of ethics and business opportunities of the company as given from the website named engnine.com. This application/agreement form is considered as authentic and legally binding documents. This contract is between the herein after referred to as member) and ENGNINE (HEREIN AFTER REFERRED to as ENGNINE.)</p>
+                <p> If the applicant agreed to add here to and abide by the condition mentioned here under and in the website named https//:engnine.com. He /She shall become a member on the prescribed membership fee to ENGNINE by way of a Crossed demand draft or cheque.</p>
+
+                <p>
+                    The applicant should have completed minimum 18 years of age and shall be competent to enter in to contract as provided in the India Contract Act’ .If the applicant had not completed 18 years age "minor detail must be filled by the parents/guardian of the applicant.....
+                </p>
+
+                <p>If the applicant is Partnership ENGNNINE, then the applicant has to provide all necessary documents pertaining to ENGNINE during the register membership.</p>
+
+                <p>For joining as an independent member of the ENGNINE. The applicant will have to make the prescribed payment towards membership fee by way of a Crossed Demand Cheque in favoring” ENGNINE” payable at Company Head Office Address branch GIDDERBAHA.</p>
+                <p>If anybody makes any payment in cash, it will be at his/her own risk and under no circumstances, will be answerable to such unauthorized cash payment.</p>
+
+                <p>The initial payment made by the applicant is towards enrolling as an independent member and the same is not refundable under any circumstances all the packages and registration fee, the processing fee and the administrative costs.</p>
+                <p>The member will be eligible for incentives or income only as per the volume of business done by him / her that is also subject to the eligibility norms to the member on only his/her joining ENGNINE</p>
+                <p>The independent member will not be an agent or employee of the ENGNINE. His/her position being so, he/she cannot bind the ENGNINE. in any authority to bind ENGNINE or to r speak on behalf of the ENGNINE..</p>
+
+
+                <p> ENGNINE will approve the membership by issuing of official receipt and an online registration, which will carry the password and an identification number know as ”Member generated by ENGNINE. This password and Member ID used for all his/her transaction and correspondence with ENGNINE. The Member ID once generate cannot be altered a point of time.</p>
+
+                <p><b> ENGNINE will in no case, entertain any communication without Member ID. </b>The member has to pay annual renewal fees at the end of the 12 month of their membership as per the norms of ENGNINE</p>
+                <p>Trimming and Services charges will be deducted as per ENGNINE norms TDS will be deducted as formulated by the Indian Government</p>
+                <p>In case of membership in name of Partnership ENGNINE, the Partnership ENGNINE has to submit partnership deeds and relevant document.</p>
+                <p>All individual members should adhere to rules and regulation formed by the organization and if any of the members is found guilty of not observing the same, then he/she will be terminated from the company.</p>
+                <p>ENGNINE reserves all rights to terminate a member.</p>
+                <p>
+                    Once a member is terminated or blocked he/she cannot enter any of ENGNINE premises/meeting location and his/her incentive/income will be stopped immediately.
+                </p>
+                <p> The member shall bear true faith and all commitment to ENGNINE and shall uphold the integrity and decorum of ENGNINE and shall maintain good relation with other members and other client.</p>
+                <p>The member shall always behave and act in a dignified manner befitting the status of a member of a reputed and leading network marketing ENGNINE of the country.</p>
+                <p>The member shall not compel or induce or mislead any person with any false statement / promise to join in the ENGNINE as a member.</p>
+                <p>ENGNINE will not be answerable for any promise, assurance given by any member to any person, unless it is in accordance with the approved business plan and terms Hence the applicant shall go through the website </p>
+                <p>https://engnine.com/" and the brochures and notices issued by ENGNINE. He / She Can have full information on all the website engnine.com, by email engninedot@gmail.com</p>
+                <p>The applicant / member shall ensure that all the information / furnished to ENGNINE. is correct and property entered. Any request for correction furnished by the member or sponsor or placement details will not be entertained, once payment statements are processed.</p>
+                <p>ENGNINE reserves all the right reject any membership / applicant at its own discretion.</p>
+                <p>ENGNINE reserves the right to modify the terms and conditions, products, schemes, business and policies, giving prior notice through its website engnine.com binding on all member of ENGNINE</p>
+                <p>The terms and conditions within above mentioned shall be governed in accordance with the law in force in the territories of India. Disputes, if any arise, shall be sub exclusive jurisdiction of the court of CHANDIGARH.</p>
+                <p>If any dispute of difference arises between the parties here of touching the business of interpretation of any terms and condition or as to incentives, income etc. related to business of the ENGNINE., the same shall be referred to arbitration and the arbitration shall be governed by the ’Arbitration And Conciliation Act. 2010</p>
+                <p>The member has to provide all correct information in the term. The mobile Number mentioned should be in working condition and if it is found during verification that number mentioned in the form is false / non-working condition or any other detail filled up in the members hip form is not true, the application will be rejected and membership will be forfeited with immediate effect.</p>
+                <p><b> If due to change in govt. policies and enactment of law, the form business is stopped then ENGNINE will not liable for any kind of claims, reimbursement and compensation. </b>If telecom companies change their commission slabs then ENGNINE will not responsible for commission revised. ENGNINE will give you incentives or commission as per telecom chart after taking company’s own commission.</p>
+
+                <p><b> ENGNINE provides advance wallet discount for its active and honest member who only works in ENGNINE. The member can use the wallet in buying and make mobile recharge as per company slabs. The member cannot use 101 rupees at once.</b>if member will not make 10 self-sales and will not sponsor minimum 3 direct members from his / her id and will not sell products and service to his/ her 3 direct then company will not give commission to him/ her.</p>
+                <p>
+                    For other products the applicant is required to complete his/her 10 direct in 30 days. The applicant is required to buy minimum 500/- product from is self id code. The applicant is required to follow company policies.
+                </p>
+                <p>If the applicant is not follow company term and conditions and policy at such situation company has right to block or terminate or exchange his id.</p>
+                <p>TERMS AND CONDITIONS MAY CHANGE AND INCREASE AS PER SITUATIONS TO SAVE THE COMPANY AS PER PRESENT CONDITIONS AND REQUIREMENTS.</p>
+                <p>In brief for quick reading (re-read)</p>
+                <p>Here is a sample network marketing plan terms and conditions document:</p>
+                <h4>NETWORK MARKETING PLAN TERMS AND CONDITIONS</h4>
+                <h4><b>1.DEFINITIONS</b></h4>
+                <p>- "Associate" means an individual who has enrolled in the Network Marketing Plan.</p>
+                <p>- "Network Marketing Plan" means the plan outlined in this document.</p>
+                <p>- "Company" means [Company Name], the entity offering the Network Marketing Plan.</p>
+                <h4><b>2. ENROLLMENT</b></h4>
+                <p>- To enroll, Associates must be at least 18 years old and provide accurate personal information.</p>
+                <p>- Enrollment fees and product purchases are non-refundable.</p>
+                <h4><b>3. RESPONSIBILITIES</b></h4>
+                <p>- Associates will sell products and services offered by the Company.</p>
+                <p>- Associates will recruit and mentor new Associates.</p>
+                <p>- Associates will attend training events and webinars.</p>
+                <h4><b>4. COMPENSATION PLAN</b></h4>
+                <p>- Associates will earn commissions on product sales and recruiting efforts.</p>
+                <p>- Commissions will be paid monthly, subject to meeting minimum requirements.</p>
+                <h4><b>5. REFUND POLICY</b></h4>
+                <p>- Product refunds are subject to a 30-day money-back guarantee.</p>
+                <p>- Enrollment fees are non-refundable.</p>
+                <h4><b>6. INTELLECTUAL PROPERTY</b></h4>
+                <p>- The Company retains ownership of all intellectual property, including trademarks, copyrights, and trade secrets.</p>
+                <h4><b>7. CONFIDENTIALITY</b></h4>
+                <p>- Associates must keep confidential all proprietary information about the Company and its business practices.</p>
+                <h4><b>8. TERMINATION</b></h4>
+                <p>- The agreement can be terminated by either party with 30 days' written notice.</p>
+                <p>- Termination may result in loss of commissions and privileges.</p>
+                <h4><b>9. DISPUTE RESOLUTION</b></h4>
+                <p>- Disputes will be resolved through arbitration in accordance with the Company's dispute resolution policy.</p>
+                <h4><b>10. GOVERNING LAW</b></h4>
+                <p>- This agreement will be governed by the laws of [State/Country].</p>
+                <h4><b>11. AMENDMENTS</b></h4>
+                <p>- The Company reserves the right to amend this agreement with 30 days' written notice to Associates.</p>
+                <h4><b>12. ENTIRE AGREEMENT</b></h4>
+                <p>- This agreement constitutes the entire understanding between the parties and supersedes all prior negotiations, understandings, and agreements.</p>
+                <p>By enrolling in the Network Marketing Plan, Associates acknowledge that they have read, understand, and agree to be bound by these Terms and Conditions.</p>
+                <p><b>Note:</b>This is a sample and should be reviewed and customized according to your specific needs and requirements. It's also recommended that you consult with a legal professional to ensure compliance with all applicable laws and regulations.</p>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- about counter -->
+
+            </div>
+        </section>
+        <!-- overview section -->
+
+    </main>
+    <footer class="bg-darkblack">
+        <div class="container pt-65px pb-5 lg:pb-10">
+            <!-- footer top or subscription -->
+            <section>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-y-30px md:gap-y-0 items-center pb-45px border-b border-darkcolor">
+                    <div data-aos="fade-up">
+                        <h4 class="text-4xl md:text-size-25 lg:text-size-40 font-bold text-whiteColor leading-50px md:leading-10 lg:leading-16">
+                            Still You Need Our
+                            <span class="text-primaryColor">Support</span> ?
+                        </h4>
+                        <p class="text-whiteColor text-opacity-65">
+                            Don’t wait make a smart & logical quote here. Its pretty easy.
+                        </p>
+                    </div>
+                    <div data-aos="fade-up">
+                        <form class="max-w-form-xl md:max-w-form-md lg:max-w-form-lg xl:max-w-form-xl 2xl:max-w-form-2xl bg-deepgray ml-auto rounded relative">
+                            <input type="email"
+                                   placeholder="Enter your email here"
+                                   class="text-whiteColor h-62px pl-15px focus:outline-none border border-deepgray focus:border-whitegrey bg-transparent rounded w-full">
+                            <button type="submit"
+                                    class="px-3 md:px-10px lg:px-5 bg-primaryColor hover:bg-deepgray text-xs lg:text-size-15 text-whiteColor border border-primaryColor block rounded absolute right-0 top-0 h-full">
+                                Subscribe Now
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- footer main -->
+            <section>
+                <div class="grid grid-cols-12 gap-30px md:gap-y-5 lg:gap-y-0 pt-60px pb-50px md:pt-30px md:pb-30px lg:pt-110px lg:pb-20">
+                    <!-- left -->
+                    <div class="col-start-1 col-span-12 md:col-span-6 lg:col-span-4 mr-30px"
+                         data-aos="fade-up">
+                        <h4 class="text-size-22 font-bold text-whiteColor mb-3">
+                            About us
+                        </h4>
+                        <p class="text-base lg:text-sm 2xl:text-base text-darkgray mb-30px leading-1.8 2xl:leading-1.8">
+                            Welcome to ENGNINE, We believe in the power of community and collaboration to bring about positive change and growth.
+                        </p>
+
+                    </div>
+                    <!-- middle 1 -->
+                    <div class="col-start-1 col-span-12 md:col-start-7 lg:col-start-5 md:col-span-6 lg:col-span-2"
+                         data-aos="fade-up">
+                        <h4 class="text-size-22 font-bold text-whiteColor mb-3">
+                            Usefull Links
+                        </h4>
+                        <ul class="flex flex-col gap-y-3">
+                            <li>
+                                <a href="about.html"
+                                   class="text-darkgray relative hover:text-primaryColor after:transition-all after:duration-300 after:w-0 after:h-2px after:absolute after:bg-primaryColor hover:after:w-full after:bottom-0 after:left-0">About Us</a>
+                            </li>
+                            <li>
+                                <a href="contact.html"
+                                   class="text-darkgray relative hover:text-primaryColor after:transition-all after:duration-300 after:w-0 after:h-2px after:absolute after:bg-primaryColor hover:after:w-full after:bottom-0 after:left-0">Contact</a>
+                            </li>
+                            <li>
+                                <a href="services.html"
+                                   class="text-darkgray relative hover:text-primaryColor after:transition-all after:duration-300 after:w-0 after:h-2px after:absolute after:bg-primaryColor hover:after:w-full after:bottom-0 after:left-0">Services</a>
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                   class="text-darkgray relative hover:text-primaryColor after:transition-all after:duration-300 after:w-0 after:h-2px after:absolute after:bg-primaryColor hover:after:w-full after:bottom-0 after:left-0">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- middle 2 -->
+                    <div class="col-start-1 col-span-12 md:col-start-1 lg:col-start-7 md:col-span-6 lg:col-span-3 pl-0 2xl:pl-60px"
+                         data-aos="fade-up">
+                        <h4 class="text-size-22 font-bold text-whiteColor mb-3">
+                            Pages
+                        </h4>
+                        <ul class="flex flex-col gap-y-3">
+                            <li>
+                                <a href="term.html"
+                                   class="text-darkgray relative hover:text-primaryColor after:transition-all after:duration-300 after:w-0 after:h-2px after:absolute after:bg-primaryColor hover:after:w-full after:bottom-0 after:left-0">Term & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="refund.html"
+                                   class="text-darkgray relative hover:text-primaryColor after:transition-all after:duration-300 after:w-0 after:h-2px after:absolute after:bg-primaryColor hover:after:w-full after:bottom-0 after:left-0">Refund & Cancellation</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                   class="text-darkgray relative hover:text-primaryColor after:transition-all after:duration-300 after:w-0 after:h-2px after:absolute after:bg-primaryColor hover:after:w-full after:bottom-0 after:left-0">Business Plan</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- right -->
+                    <div class="col-start-1 col-span-12 md:col-start-7 lg:col-start-10 md:col-span-6 lg:col-span-3 pl-0 2xl:pl-50px"
+                         data-aos="fade-up">
+                        <h4 class="text-size-22 font-bold text-whiteColor mb-3">
+                            Contact Us
+                        </h4>
+                        <ul class="flex flex-col gap-y-5">
+                            <li>
+                                <a class="flex items-center gap-3 group cursor-pointer">
+
+                                    <div>
+                                        <p class="text-xs text-darkgray mb-7px">Email</p>
+                                        <h6 class="text-size-15 text-whiteColor font-bold group-hover:text-primaryColor transition-all duration-300">
+                                            lsrw26@gmail.com
+                                        </h6>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="flex items-center gap-3 group cursor-pointer">
+
+                                    <div>
+                                        <p class="text-xs text-darkgray mb-7px">Mo. No.</p>
+                                        <h6 class="text-size-15 text-whiteColor font-bold group-hover:text-primaryColor transition-all duration-300">
+                                            +91-9569602525
+                                        </h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-center gap-3 group cursor-pointer">
+
+                                    <div>
+                                        <p class="text-xs text-darkgray mb-7px">Address</p>
+                                        <h6 class="text-size-15 text-whiteColor font-bold group-hover:text-primaryColor transition-all duration-300">
+                                            Circular Bank Road Near Shiv Mandir City Gidderbaha Pincode 152101 State Punjab
+                                        </h6>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- footer copyright  -->
+            <div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-30px pt-10 items-center">
+                    <div class="lg:col-start-1 lg:col-span-3">
+                        <a href="index.html">
+                            <img src="assets/images/logo/logo_2.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="lg:col-start-4 lg:col-span-6">
+                        <p class="text-whiteColor">
+                            Copyright © <span class="text-primaryColor">2024 </span> by
+                            ENG Nine. All Rights Reserved.
+                        </p>
+                    </div>
+
+                    <div class="lg:col-start-10 lg:col-span-3">
+                        <ul class="flex gap-3 lg:gap-2 2xl:gap-3 lg:justify-end">
+                            <li>
+                                <a href="#"
+                                   class="w-40.19px lg:w-35px 2xl:w-40.19px h-37px lg:h-35px 2xl:h-37px leading-37px lg:leading-35px 2xl:leading-37px text-whiteColor bg-whiteColor bg-opacity-10 hover:bg-primaryColor text-center">
+                                    <i class="icofont-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                   class="w-40.19px lg:w-35px 2xl:w-40.19px h-37px lg:h-35px 2xl:h-37px leading-37px lg:leading-35px 2xl:leading-37px text-whiteColor bg-whiteColor bg-opacity-10 hover:bg-primaryColor text-center">
+                                    <i class="icofont-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                   class="w-40.19px lg:w-35px 2xl:w-40.19px h-37px lg:h-35px 2xl:h-37px leading-37px lg:leading-35px 2xl:leading-37px text-whiteColor bg-whiteColor bg-opacity-10 hover:bg-primaryColor text-center">
+                                    <i class="icofont-vimeo"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                   class="w-40.19px lg:w-35px 2xl:w-40.19px h-37px lg:h-35px 2xl:h-37px leading-37px lg:leading-35px 2xl:leading-37px text-whiteColor bg-whiteColor bg-opacity-10 hover:bg-primaryColor text-center">
+                                    <i class="icofont-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                   class="w-40.19px lg:w-35px 2xl:w-40.19px h-37px lg:h-35px 2xl:h-37px leading-37px lg:leading-35px 2xl:leading-37px text-whiteColor bg-whiteColor bg-opacity-10 hover:bg-primaryColor text-center">
+                                    <i class="icofont-skype"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/accordion.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/count.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/counterup.js"></script>
+    <script src="assets/js/dropdown.js"></script>
+    <script src="assets/js/filter.js"></script>
+    <script src="assets/js/mobileMenu.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/popup.js"></script>
+    <script src="assets/js/preloader.js"></script>
+    <script src="assets/js/scrollUp.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/smoothScroll.js"></script>
+    <script src="assets/js/stickyHeader.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/videoModal.js"></script>
+    <script src="assets/js/vanilla-tilt.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+<!-- Mirrored from html.themewin.com/edurcok-preview-tailwind/edurock/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Jul 2024 05:32:05 GMT -->
+</html>
